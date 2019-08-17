@@ -14,7 +14,7 @@ set -e
 mkdir -p signed >/dev/null 2>&1
 mkdir -p signed/stripped >/dev/null 2>&1
 
-version=`python3 -c "import electrumfairchains; print(electrumfairchains.version.ELECTRUMFAIRCHAINS_VERSION)"`
+version=`python3 -c "import electrumfairchains; print(electrumfairchains.version.EFC_VERSION)"`
 
 echo "Found $(ls dist/*.exe | wc -w) files to verify."
 
